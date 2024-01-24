@@ -1,0 +1,33 @@
+Problem 1:
+Issue found at line 249
+"invaders[invaderRow][invaderRow]" should be changed to "invaders[invaderRow][invaderCol]".
+
+
+Problem 2:
+Issue found at line 28
+if (protector->weapon == weapon_axe && invader->weapon == weapon_sword);
+The ';' should be removed!
+
+Problem 3:
+Issue found at line 62
+"for (int colIdx = 0; colIdx < numCols;)"
+should be changed to 
+"for (int colIdx = 0; colIdx < numCols; ++colIdx)"
+
+Problem 4:
+Issue found at line 218
+"DeallocateWarriors(invaders, n, m);"
+should be chenged to 
+"DeallocateWarriors(invaders, m, n);"
+Due to the allocation dimension is mxn.
+
+Problem 5:
+Issue found at line 113
+"if (invader->power < protector->power)"
+shoule be changed to 
+"if (invader->power > protector->power)"
+
+Issue found at line 117
+"else if (protector->power < invader->power)"
+shoule be changed to
+"else if (protector->power > invader->power)"
